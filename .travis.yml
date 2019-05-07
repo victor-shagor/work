@@ -2,9 +2,9 @@ language: node_js
 node_js:
   - "stable"
 
-cache:
-  directories:
-    - "node_modules"
+# cache:
+#   directories:
+#     - "node_modules"
 # single test suite, non-parallel build.
 
 env:
