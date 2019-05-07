@@ -7,7 +7,7 @@
     "start": "babel-node ./app.js",
     "sagoro-lint": "eslint app.js",
     "sagoro-lint-fix": "eslint app.js --fix",
-    "test": "mocha --require @babel/register test/tests.js --exit",
+    "test": "nyc mocha --require @babel/register test/tests.js --exit",
     "json-server": "json-server --watch db.json"
   },
   "author": "",
@@ -33,6 +33,7 @@
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "nyc": "^14.1.0",
     "travis-ci": "^2.2.0"
   }
 }
